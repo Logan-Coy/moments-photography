@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@utils*": ["./utils/*"],
+      "@public*": ["./public/*"],
+      "@*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".eslintrc.cjs",
+    "components/Navbar.tsx",
+    "utils/s3.ts"
+  ],
+  "exclude": ["node_modules"],
+  "extends": [
+    "@tsconfig/strictest/tsconfig.json",
+    "@tsconfig/node18/tsconfig.json",
+    "@tsconfig/next/tsconfig.json"
+  ]
+}
