@@ -29,6 +29,7 @@ export const getImagesFromS3 = async (folder: string) => {
     return photoArray;
   } catch (err) {
     console.error(err);
+    return;
   }
 };
 
