@@ -1,15 +1,21 @@
 "use client";
 
 import { Card, Modal } from "@components";
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { workData } from "@constants";
-import { useLockBodyScroll, useToggle } from "react-use";
+import { useToggle } from "react-use";
 
 const Work = () => {
   const [showModal, setShowModal] = useState("");
   const [locked, toggleLocked] = useToggle(false);
 
-  useLockBodyScroll(locked);
+  // useLockBodyScroll(locked);
+
+  useEffect(() => {
+    locked
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  });
 
   return (
     <section id="work" className="py-2">
