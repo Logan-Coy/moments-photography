@@ -14,7 +14,8 @@
     ".next/types/**/*.ts",
     ".eslintrc.cjs",
     "components/Navbar.tsx",
-    "utils/s3.ts"
+    "utils/s3.ts",
+    "app/api/s3/route"
   ],
   "exclude": ["node_modules"],
   "extends": [
