@@ -26,12 +26,6 @@ export const navLinks = [
 
 export const workData = [
   {
-    imgSrc: weddingThumbnail,
-    imgAlt: "wedding image",
-    title: "Weddings",
-    folder: "weddings/",
-  },
-  {
     imgSrc: seniorThumbnail,
     imgAlt: "senior photos",
     title: "Senior Photos",
@@ -42,6 +36,12 @@ export const workData = [
     imgAlt: "Family Photo",
     title: "Family",
     folder: "family/",
+  },
+  {
+    imgSrc: weddingThumbnail,
+    imgAlt: "wedding image",
+    title: "Weddings",
+    folder: "weddings/",
   },
   {
     imgSrc: eventsThumbnail,

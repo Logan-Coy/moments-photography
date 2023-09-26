@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import { logo2, menu, close } from "@utils/images";
@@ -10,8 +10,33 @@ import { navLinks } from "@constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   return (
-    <nav className="w-full flex py-6 justify-between items-center px-8">
+    <nav
+      className={`sticky ${
+        visible ? "top-0" : ""
+      } w-full flex py-6 justify-between items-center px-8 drop-shadow fixed z-10 bg-white`}
+    >
       <Image src={logo2} alt="Moments by Kerri Coy" height={50} />
 
       <ul className="list-none ss:flex hidden justify-end items-center flex-1">
@@ -43,13 +68,13 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-slate-100 absolute top-20 right-0 mx-4 my-2 min-w-[180px] rounded-xl z-10`}
+          } p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[180px] rounded-xl z-10`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1 py-2">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-montserrat text-lg cursor-pointer ${
+                className={`font-montserrat text-lg cursor-pointer text-white ${
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 }`}
               >

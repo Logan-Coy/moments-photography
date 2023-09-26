@@ -53,6 +53,7 @@ const Modal = ({ visible, title, onClose, folder }: ModalProps) => {
                 src={image.url}
                 alt={image.key}
                 className="p-1"
+                loading="lazy"
               />
             ))}
           </div>
