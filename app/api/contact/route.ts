@@ -7,7 +7,9 @@ export async function POST(request: NextRequest) {
   const values = (await request.json()) as ContactEmailProps;
 
   await resend.emails.send({
+    //@ts-expect-error
     from: process.env["RESEND_EMAIL_FROM"],
+    //@ts-expect-error
     to: process.env["RESEND_EMAIL_TO"],
     subject: "New Contact Form Submission!",
     react: ContactEmail(values),
