@@ -3,6 +3,7 @@ import close from "@public/assets/close.svg";
 import logo2 from "@public/assets/logo2.png";
 import downArrow from "@public/assets/downArrow.svg";
 import trashCan from "@public/assets/trashCan.svg";
+import logo2White from "@public/assets/logo2White.png";
 
 import weddingThumbnail from "@public/assets/weddingThumbnail.jpg";
 import seniorThumbnail from "@public/assets/seniorThumbnail.jpg";
@@ -30,4 +31,5 @@ export {
   momPic,
   downArrow,
   trashCan,
+  logo2White,
 };
