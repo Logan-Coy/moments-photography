@@ -3,11 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const client = new S3Client({ region: "us-east-2" });
 
-export const uploadToS3 = async (
-  fileName: string,
-  data: any,
-  folder: string,
-) => {
+const uploadToS3 = async (fileName: string, data: any, folder: string) => {
   const command = new PutObjectCommand({
     Bucket: "momentsphotobucket",
     Key: `${folder}${fileName}`,
