@@ -86,8 +86,8 @@ const ContactEmail = (values: ContactEmailProps) => (
               color: "rgb(0,0,0, 0.7)",
             }}
           >
-            © 2023 | Moments Photography, Ashtabula, OH 44048, U.S.A |
-            www.momentsphotography.com
+            © 2023 | Moments by Kerri Coy, Ashtabula, OH 44048, U.S.A |
+            www.momentsbykerricoy.com
           </Text>
         </Container>
       </Body>
