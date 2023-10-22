@@ -1,7 +1,7 @@
 import "@styles/globals.css";
 
 export const metadata = {
-  title: "Moments Photography",
+  title: "Moments by Kerri Coy",
   description: "Photographer based in Ashtabula, Ohio",
 };
 

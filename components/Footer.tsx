@@ -24,8 +24,8 @@ const Footer = () => {
       </div>
       <div className="flex bg-black justify-center">
         <p className="flex text-white opacity-70 font-montserrat text-[10px] items-center text-center mb-4">
-          © 2023 | Moments Photography, Ashtabula, OH 44048, U.S.A |
-          www.momentsphotography.com
+          © 2023 | Moments by Kerri Coy, Ashtabula, OH 44048, U.S.A |
+          www.momentsbykerricoy.com
         </p>
       </div>
     </>
