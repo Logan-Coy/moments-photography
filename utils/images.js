@@ -14,7 +14,7 @@ import natureThumbnail from "@public/assets/natureThumbnail.jpg";
 import placesThumbnail from "@public/assets/placesThumbnail.jpg";
 import thingsThumbnail from "@public/assets/thingsThumbnail.jpg";
 
-import momPic from "@public/assets/momPic.png";
+import momPic from "@public/assets/momPic.jpg";
 
 export {
   menu,

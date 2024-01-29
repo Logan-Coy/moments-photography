@@ -18,7 +18,7 @@ const About = () => {
               alt="photo of Kerri Coy"
               height={300}
               width={300}
-              className="lg:col-span-2"
+              className="lg:col-span-2 rounded-full"
             />
             <div className="flex-row md:pl-8 col-span-2 lg:col-span-3 py-4 pt-8 md:pt-4">
               <div className="border-[1px] border-black rounded-lg">
